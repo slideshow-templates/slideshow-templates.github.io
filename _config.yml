@@ -1,0 +1,13 @@
+
+
+markdown: kramdown
+
+
+exclude:
+  - attic
+  - README.md
+
+safe: true
+lsi: false
+
+
