@@ -1,15 +1,24 @@
 ---
 layout: default
-title: Slideshow Template Reference
+title: Create Your Own Templates - Template Reference
 ---
 
 # {{ page.title }}
+
+<div class="toc" markdown="1">
+Contents:
+
+* [Headers](#headers)
+* [Slides](#slides)
+* [Filename](#filename)
+* [Questions? Comments?](#questions)
+</div>
 
 
 Create your own templates (use `headers`, `slides`, `name`, etc.)
 
 
-## Headers 
+## Headers  {#headers}
 
 Use `@headers` to reference headers (such as title, author, etc.) from your slide source
 (or from your `slideshow.yml` configuration) in your templates.
@@ -34,7 +43,7 @@ Example 2:
 ~~~
 
 
-## Slides
+## Slides   {#slides}
 
 Use `@slides` to reference your slides. A `slide` includes the following fields:
 
@@ -68,7 +77,7 @@ Example 2:
 ~~~
 
 
-## Filename
+## Filename    {#filename}
 
 Use `@name` to reference the basename of the passed in file e.g. `microformats.text` becomes `microformats`.
 
