@@ -20,32 +20,36 @@ Create your own templates (use `headers`, `slides`, `name`, etc.)
 
 ## Headers  {#headers}
 
-Use `@headers` to reference headers (such as title, author, etc.) from your slide source
+Use `headers` to reference headers (such as title, author, etc.) from your slide source
 (or from your `slideshow.yml` configuration) in your templates.
 
 Example:
 
-~~~
-<meta name="author" content="<%= @headers['author']%>">
+```
+{% raw %}
+<meta name="author" content="{{ headers['author'] }}">
 
-<title><%= @headers['title'] %> | by <%= @headers['author']%></title>
-~~~
+<title>{{ headers['title'] }} | by {{ headers['author'] }}</title>
+{% endraw %}
+```
 
 Example 2:
 
-~~~
+```
+{% raw %}
 <div class='slide'>
-  <h1><%= @headers['title'] %></h1>
-  <h2><%= @headers['subtitle'] %></h2>
-  <h3><%= @headers['author']%></h3>
-  <h4><%= @headers['company']%></h4>
+  <h1>{{ headers['title'] }}</h1>
+  <h2>{{ headers['subtitle'] }}</h2>
+  <h3>{{ headers['author'] }}</h3>
+  <h4>{{ headers['company'] }}</h4>
 </div>
-~~~
+{% endraw %}
+```
 
 
 ## Slides   {#slides}
 
-Use `@slides` to reference your slides. A `slide` includes the following fields:
+Use `slides` to reference your slides. A `slide` includes the following fields:
 
 * `content` 
 * `header`   => Optional Header                    
@@ -55,37 +59,43 @@ Use `@slides` to reference your slides. A `slide` includes the following fields:
 
 Example:
 
-~~~
-<% @slides.each do |slide| %>
+```
+{% raw %}
+{% for slide in slides %}
   <div class='slide'>
-     <%= slide.content %>
+     {{ slide.content }}
   </div>
-<% end %>
-~~~
+{% endfor %}
+{% endraw %}
+```
 
 Example 2:
 
-~~~
-<% @slides.each do |slide| %>
-  <div class='slide <%= slide.classes %>'>
-     <header><%= slide.header %></header>
+```
+{% raw %}
+{% for slide in slides %}
+  <div class='slide {{ slide.classes }}'>
+     <header>{{ slide.header }}</header>
      <section>
-        <%= slide.content_without_header %>
+        {{ slide.content_without_header }}
      </section>
   </div>
-<% end %>
-~~~
+{% endfor %}
+{% endraw %}
+```
 
 
 ## Filename    {#filename}
 
-Use `@name` to reference the basename of the passed in file e.g. `microformats.text` becomes `microformats`.
+Use `name` to reference the basename of the passed in file e.g. `microformats.text` becomes `microformats`.
 
 Example:
 
-~~~
-<link rel="stylesheet" href="<%= "#{@name}.css" %>">
-~~~
+```
+{% raw %}
+<link rel="stylesheet" href="{{name}}.css">
+{% endraw %}
+```
 
 
 {% include questions.md %}
