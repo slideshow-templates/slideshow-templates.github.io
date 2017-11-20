@@ -1,0 +1,53 @@
+######################
+## templates
+
+- name:        S6 Blank
+  github:      slideshow-templates/slideshow-s6-blank
+  demo_url:    slideshow-s6-blank/slides.html
+  preview_url: slideshow-s6-blank/preview.png
+  
+- name:        reveal.js
+  github:      slideshow-templates/slideshow-reveal.js
+  demo_url:    slideshow-reveal.js/slides.html
+  preview_url: slideshow-reveal.js/preview.png
+
+- name:        impress.js
+  github:      slideshow-templates/slideshow-impress.js
+  demo_url:    slideshow-impress.js/slides.html
+  preview_url: slideshow-impress.js/preview.png
+
+- name:        Shower
+  github:      slideshow-templates/slideshow-shower
+  demo_url:    slideshow-shower/slides.html
+  preview_url: slideshow-shower/preview.png
+
+- name:        deck.js
+  github:      slideshow-templates/slideshow-deck.js
+  demo_url:    slideshow-deck.js/slides.html
+  preview_url: slideshow-deck.js/preview.png
+
+- name:        bespoke.js
+  github:      slideshow-templates/slideshow-bespoke.js
+  demo_url:    slideshow-bespoke.js/slides.html
+  preview_url: slideshow-bespoke.js/preview.png
+
+- name:        S5 Blank
+  github:      slideshow-templates/slideshow-s5-blank
+  demo_url:    slideshow-s5-blank/slides.html
+  preview_url: slideshow-s5-blank/preview.png
+
+- name:        CSSS
+  github:      slideshow-templates/slideshow-csss
+  demo_url:    slideshow-csss/slides.html
+  preview_url: slideshow-csss/preview.png
+
+- name:        Google HTML5 Rocks
+  github:      slideshow-templates/slideshow-google-html5-slides
+  demo_url:    sideshow-google-html5-slides/slides.html
+  preview_url: slideshow-google-html5-slides/preview.png
+
+- name:        Slidy
+  github:      slideshow-templates/slideshow-slidy
+  demo_url:    slideshow-slidy/slides.w3c.html
+  preview_url: slideshow-slidy/preview.png
+  
