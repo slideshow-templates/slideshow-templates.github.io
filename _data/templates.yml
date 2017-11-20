@@ -43,7 +43,7 @@
 
 - name:        Google HTML5 Rocks
   github:      slideshow-templates/slideshow-google-html5-slides
-  demo_url:    slideshow-google-html5-slides/slides.html
+  demo_url:    slideshow-google-html5-slides/slides.html5.html
   preview_url: slideshow-google-html5-slides/preview.png
 
 - name:        Slidy
