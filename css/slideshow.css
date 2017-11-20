@@ -7,11 +7,18 @@ body
 }
 
 
-div.preview-header {
+/* use flexbox layout for gallery */
+
+#gallery {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+#gallery div.preview-header {
   margin-left: 11px;
 }
 
-img.preview {
+#gallery img.preview {
   width: 350px;
   /* height: 350px;   */  /* use auto for height - why? why not?? */
   border: 1px solid silver;  /* use #eeeeee */
@@ -20,6 +27,7 @@ img.preview {
   margin-bottom: 10px;
   margin-top: 4px;
 }
+
 
 
 
